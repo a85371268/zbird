@@ -1,0 +1,67 @@
+//banner部分
+@import "variable";
+.banner{
+    height: 600px;
+    @include zhong;
+    position: relative;
+    >ul{height: 100%;}
+    >ul>li{
+        height: 600px;
+        float: left;
+        display: none;
+        >a {
+            height: 600px;
+            width:100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            overflow: hidden;
+            img{
+                margin: 0 -100%;
+            }
+        }
+
+    }
+    >ul>li.ac{display: block;}
+    >ul>li:nth-child(1){
+        display: block;
+    }
+    >a{
+        position: absolute;
+        width: 45px;
+        height: 70px;
+        display: none;
+        &.ac{display: block;}
+        &:hover{background-position: -45px 0;cursor: pointer;}
+    }
+    .goPrev{
+        background: url(/images/prev_54.png) no-repeat;
+        left: 50%;
+        top: 269px;
+        margin-left: -527px;
+    }
+    .goNext{
+        background: url(/images/next_54.png) no-repeat;
+        left: 50%;
+        top: 269px;
+        margin-left: 527px;
+    }
+    .tabBtn{
+        height: 14px;
+        width: 106px;
+        position: absolute;
+        left: 50%;
+        margin-left: -53px;
+        bottom: 26px;
+        display: flex;
+        justify-content:space-between;
+        li{
+            width: 14px;
+            height: 14px;
+            background: url(/images/superslide_btn.png) no-repeat;
+            cursor: pointer;
+        } 
+        li.ac{background-position: -14px 0;}
+    }
+}

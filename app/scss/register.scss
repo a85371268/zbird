@@ -1,0 +1,110 @@
+@import "variable";
+@import "side";
+@import "reset";
+@import "header";
+@import "footer";
+
+main{
+    position: relative;
+    .bgbanner{
+        height: 601px;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        >img{
+            height: 100%;
+            margin: 0 -100%;
+        }
+    }
+    .reg_wrap{
+        width: $width;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        @include zhong;
+        .reg_right{
+            width: 366px;
+            height: 441px;
+            float: right;
+            margin-right: 50px;
+            margin-top: 93px;
+            //欢迎注册标题
+            >p{
+                height: 34px;
+                >span{
+                    font-size: 21px;
+                    float: left;
+                }
+                >a{
+                    float: right;
+                    line-height: 26px;
+                    color: #666666;
+                    >i{
+                        color: nth($bgcolor,4);
+                        display: inline-block;
+                        margin-left: 11px;
+                    }
+                }
+            }
+            //注册界面表单
+            >form{
+                width: 100%;
+                height: 377px;
+                background: #fcede9;
+                padding-left: 41px;
+                padding-top: 45px;
+                >.input1,.input2,.input3,.input4{
+                    height: 56px;
+                    >input{
+                        width: 283px;
+                        height: 34px;
+                        border: 1px solid transparent;
+                        font-size: 12px;
+                        padding-left: 12px;
+                        @include border;
+                    }
+                    >span{
+                        height: 22px;
+                        line-height: 22px;
+                        padding-left: 12px;
+                        opacity: 0;
+                        &.ac{opacity: 1;}
+                    }
+                }
+                >.input5{
+                    height: 34px;
+                    color: #505050;
+                    line-height: 18px;
+                    >input{
+                        height: 15px;
+                        width: 15px;
+                        border: none;
+                        margin-top: 2px;
+                        float: left;
+                    }
+                    >a{
+                        text-decoration: underline;
+                        color: #505050;
+                    }
+                }
+                >a{
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 32px;
+                    width: 281px;
+                    height: 32px;
+                    background: nth($bgcolor,4);
+                    border: 0;
+                    color: white;
+                    @include border;
+                    &:hover{
+                        background: #fe9990;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

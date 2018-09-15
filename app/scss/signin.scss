@@ -1,0 +1,162 @@
+$font-size:12px;
+$bgcolor:#fbf2f1,#fdb2a4,#fdf2ec,#ff8a81;
+$width: 1180px;
+@mixin zhong{margin-left: auto;margin-right: auto;}
+@mixin border{
+    border-top-left-radius: 8px;    
+    border-top-right-radius: 8px;    
+    border-bottom-left-radius: 8px;    
+    border-bottom-right-radius: 8px;    
+}
+@mixin flash{
+    @keyframes flash{
+        0%{opacity: 1;}
+        50%{opacity: 0.7;}
+        100%{opacity: 1;}
+    }
+}
+@import "side";
+@import "reset";
+@import "header";
+@import "footer";
+
+main{
+    position: relative;
+    //调整背景图片
+    .bgbanner{
+        height: 601px;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        >img{
+            height: 100%;
+            margin: 0 -100%;
+        }
+    }
+    .sign_wrap{
+        width: $width;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        @include zhong;
+        .sign_right{
+            width: 366px;
+            height: 441px;
+            float: right;
+            margin-right: 50px;
+            margin-top: 93px;
+            >p{
+                height: 34px;
+                width: 100%;
+                >span{
+                    font-size: 21px;
+                    float: left;
+                }
+                >a{
+                    float: right;
+                    color: #666666;
+                    &:hover{
+                        color: nth($bgcolor,4);
+                    }
+                }
+            }
+            >.sign_bg{
+                width: 100%;
+                height: 381px;
+                background: url(/images/auth_main_login.jpg) no-repeat;
+                padding-left: 41px;
+                padding-top: 45px;
+                >form{
+                    width: 100%;
+                    height: 255px;
+                    //用户名密码框
+                    >.input1,.input2{
+                        height: 56px;
+                        >input{
+                            width: 283px;
+                            height: 34px;
+                            border: 1px solid transparent;
+                            font-size: 12px;
+                            padding-left: 12px;
+                            @include border;
+                        }
+                        >span{
+                            height: 22px;
+                            line-height: 22px;
+                            opacity: 0;
+                            &.ac{opacity: 1;}
+                            padding-left:12px;
+                        }
+                    }
+                    //忘记密码选项
+                    >.input5{
+                        height: 34px;
+                        line-height: 18px;
+                        width: 283px;
+                        >a{
+                            float: right;
+                            color: #505050;
+                            &:hover{
+                                color: nth($bgcolor,4);
+                            }
+                        }
+                    }
+                    //登录按钮
+                    >a{
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 32px;
+                        width: 281px;
+                        height: 32px;
+                        background: nth($bgcolor,4);
+                        border: 0;
+                        color: white;
+                        @include border;
+                        &:hover{
+                            background: #fe9990;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                //其他登录方式
+                .other_sign{
+                    height: 46px;
+                    >a{
+                        float: left;
+                        margin-right: 32px;
+                        height: 46px;
+                        width: 46px;
+                        &:nth-child(1){
+                            background: url(/images/qq-btn.jpg) no-repeat;
+                            &:hover{
+                                background-position-x: -46px;
+                            }
+                        }
+                        &:nth-child(2){
+                            background: url(/images/weixin-btn.jpg) no-repeat;
+                            &:hover{
+                                background-position-x: -46px;
+                            }
+                        }
+                        &:nth-child(3){
+                            background: url(/images/sina-btn.jpg) no-repeat;
+                            &:hover{
+                                background-position-x: -46px;
+                            }
+                        }
+                        &:nth-child(4){
+                            background: url(/images/zhifubao-btn.jpg) no-repeat;
+                            &:hover{
+                                background-position-x: -46px;
+                            }
+                        }
+                    }
+
+                }
+            }
+            
+        }
+    }
+}

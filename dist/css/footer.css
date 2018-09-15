@@ -1,0 +1,103 @@
+footer {
+  height: 551px;
+  background: #fdf2ec;
+  font-size: 12px; }
+  footer .wrap {
+    width: 1180px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    footer .wrap .serve {
+      width: 100%;
+      height: 66px;
+      background: url(/images/footer_lnks.jpg) no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      justify-content: space-between; }
+      footer .wrap .serve li {
+        width: 150px;
+        height: 100%; }
+        footer .wrap .serve li a {
+          float: left;
+          width: 100%;
+          height: 100%; }
+    footer .wrap .links {
+      height: 181px;
+      width: 100%; }
+      footer .wrap .links .s_logo {
+        float: left;
+        width: 85px;
+        height: 90px;
+        background: url(/images/logo85x90.jpg) no-repeat;
+        margin-left: 30px;
+        margin-top: 44px; }
+      footer .wrap .links .links_center ul {
+        width: 144px;
+        padding-top: 38px;
+        height: 100%;
+        float: left; }
+        footer .wrap .links .links_center ul:nth-child(1) {
+          margin-left: 80px; }
+        footer .wrap .links .links_center ul > p {
+          color: #666666;
+          width: 110px;
+          height: 22px; }
+        footer .wrap .links .links_center ul > li {
+          line-height: 20px;
+          width: 110px; }
+          footer .wrap .links .links_center ul > li > a {
+            display: block;
+            width: 110px;
+            color: #999999; }
+            footer .wrap .links .links_center ul > li > a:hover {
+              color: #ff8a81; }
+      footer .wrap .links .links_right {
+        width: 214px;
+        height: 120px;
+        background: url(/images/web_code.jpg) no-repeat;
+        float: right;
+        margin-top: 30px; }
+    footer .wrap .other {
+      text-align: center;
+      color: #999999; }
+      footer .wrap .other .callUs {
+        width: 100%;
+        height: 92px; }
+        footer .wrap .other .callUs a {
+          display: block;
+          width: 488px;
+          height: 60px;
+          background: url(/images/fot_consult.jpg) no-repeat;
+          margin-left: 369px; }
+          footer .wrap .other .callUs a:hover {
+            background-position: -488px 0; }
+      footer .wrap .other .map {
+        height: 26px; }
+        footer .wrap .other .map a {
+          color: #999999; }
+          footer .wrap .other .map a:hover {
+            color: #ff8a81; }
+        footer .wrap .other .map span {
+          padding-left: 10px;
+          padding-right: 10px; }
+      footer .wrap .other .company {
+        height: 20px; }
+      footer .wrap .other .webs {
+        height: 37px; }
+        footer .wrap .other .webs a {
+          color: #999999; }
+          footer .wrap .other .webs a:hover {
+            color: #ff8a81; }
+        footer .wrap .other .webs span {
+          padding-left: 5px;
+          padding-right: 5px; }
+      footer .wrap .other .imgs {
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto; }
+        footer .wrap .other .imgs a {
+          float: left; }
+          footer .wrap .other .imgs a:nth-last-child(1) img {
+            width: 115px;
+            height: 35px;
+            margin-left: 6px; }

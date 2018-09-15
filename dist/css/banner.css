@@ -1,0 +1,61 @@
+.banner {
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .banner > ul {
+    height: 100%; }
+  .banner > ul > li {
+    height: 600px;
+    float: left;
+    display: none; }
+    .banner > ul > li > a {
+      height: 600px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-align: center;
+      overflow: hidden; }
+      .banner > ul > li > a img {
+        margin: 0 -100%; }
+  .banner > ul > li.ac {
+    display: block; }
+  .banner > ul > li:nth-child(1) {
+    display: block; }
+  .banner > a {
+    position: absolute;
+    width: 45px;
+    height: 70px;
+    display: none; }
+    .banner > a.ac {
+      display: block; }
+    .banner > a:hover {
+      background-position: -45px 0;
+      cursor: pointer; }
+  .banner .goPrev {
+    background: url(/images/prev_54.png) no-repeat;
+    left: 50%;
+    top: 269px;
+    margin-left: -527px; }
+  .banner .goNext {
+    background: url(/images/next_54.png) no-repeat;
+    left: 50%;
+    top: 269px;
+    margin-left: 527px; }
+  .banner .tabBtn {
+    height: 14px;
+    width: 106px;
+    position: absolute;
+    left: 50%;
+    margin-left: -53px;
+    bottom: 26px;
+    display: flex;
+    justify-content: space-between; }
+    .banner .tabBtn li {
+      width: 14px;
+      height: 14px;
+      background: url(/images/superslide_btn.png) no-repeat;
+      cursor: pointer; }
+    .banner .tabBtn li.ac {
+      background-position: -14px 0; }

@@ -1,0 +1,366 @@
+@import "variable";
+@import "side";
+@import "header";
+@import "nav";
+@import "reset";
+@import "footer";
+
+
+main{
+    //列表页背景图
+    .list_banner{
+        height: 356px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        >img{
+            margin: 0 -100%;
+        }
+        >.list_banner_wrap{
+            width: $width;
+            @include zhong;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            >p{
+                height: 46px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                line-height: 46px;
+                color: #666666;
+                >a{
+                    padding-right: 11px;
+                    color: #666666;
+                    &:hover{
+                        color: nth($bgcolor,4);
+                    }
+                }
+                >span{
+                    padding-right: 2px;
+                }
+            }
+        }
+    }
+    //列表页主体
+    .list_main{
+        width: 100%;
+        padding-top: 35px;
+        .list_main_wrap{
+            width: $width;
+            @include zhong;
+            .list_main_top{
+                width: 100%;
+                overflow: hidden;
+                //主体左边侧边栏
+                .list_main_left{
+                    width: 181px;
+                    float: left;
+                    //侧边栏伸缩小导航
+                    .list_main_nav{
+                        width: 100%;
+                        border-top: 1px solid;
+                        border-bottom: 1px solid;
+                        padding: 17px 0;
+                        padding-left: 11px;
+                        margin-bottom: 10px;
+                        ul{
+                            >li{
+                                height: 30px;
+                                width: 100%;
+                                line-height: 30px;
+                                padding-left: 21px;
+                                background: url(/images/list/left_category_add.jpg) no-repeat 0 8px;
+                                &.ac{
+                                    background-image:url(/images/list/left_category_low.jpg);
+                                }
+                            }
+                            >ol{
+                                width: 120px;
+                                padding-left: 21px;
+                                padding-bottom: 10px;
+                                display: none;
+                                &.ac{display: block;}
+                                li{
+                                    line-height: 26px;
+                                    >a{
+                                        color: #666666;
+                                        &:hover{
+                                            color: nth($bgcolor,4);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //热卖推荐
+                    .list_main_remai{
+                        >p{
+                            line-height: 25px;
+                            padding-left: 15px;
+                        }
+                        >ol{
+                            li{
+                                width: 181px;
+                                height: 221px;
+                                >a{
+                                    float: left;
+                                    width: 100%;
+                                    height: 100%;
+                                    text-align: center;
+                                    >.remai_pic{
+                                        width: 180px;
+                                        height: 180px;
+                                        img{width: 100%;height: 100%;}
+                                    }
+                                    >i{
+                                        display: block;
+                                        line-height: 20px;
+                                        color: #666666;
+                                    }
+                                    >.remai_pri{
+                                        font-family: Arial,"宋体";
+                                        span:nth-child(1){
+                                            display: inline-block;
+                                            font-size: 14px;
+                                            vertical-align: middle;
+                                            margin-right: 10px;
+                                            color: nth($bgcolor,4);
+                                            >i{
+                                                font-family: "微软雅黑";
+                                            }
+                                        }
+                                        span:nth-child(2){
+                                            display: inline-block;
+                                            color: #999999;
+                                            vertical-align: middle;
+                                            em{
+                                                padding-left: 5px;
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        //推荐广告图
+                        >ul{
+                            padding-top: 6px;
+                            >li{
+                                margin-top: 12px;
+                                width: 181px;
+                                height: 213px;
+                                >a{
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 100%;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }  
+                            }
+                        }
+                        //固定的那张预约到店图
+                        >div{
+                            margin-top: 12px;
+                            width: 181px;
+                            height: 213px;
+                            >a{
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }  
+                        }
+                    }
+                }
+                //列表页右边的选择界面order
+                .list_main_right{
+                    width: 945px;
+                    float: right;
+                    border-top: 1px solid;
+                    //order顶部的tab选项
+                    >.order_tab{
+                        height: 45px;
+                        width: 100%;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-bottom: 1px solid #dedede;
+                        margin-bottom: 20px;
+                        >i{
+                            display: inline-block;
+                            width: 1px;
+                            height: 16px;
+                            background: #cccccc;
+                            vertical-align: middle;
+                        }
+                        >span{
+                            display: inline-block;
+                            width: 120px;
+                            height: 44px;
+                            border-bottom: 2px solid transparent;
+                            text-align: center;
+                            line-height: 42px;
+                            >a{
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                                &:hover{
+                                    color: nth($bgcolor,4);
+                                }
+                            }
+                            &.ac{
+                                border-bottom: 2px solid nth($bgcolor,4);
+                                >a{
+                                    color: nth($bgcolor,4);
+                                }
+                            }
+                        }
+                    }
+                    //显示商品总数
+                    >.order_num{
+                        height: 36px;
+                        line-height: 36px;
+                        text-align: right;
+                        padding-right: 105px;
+                        span{
+                            i{
+                                font-family: Arial;
+                                color: nth($bgcolor,4);
+                                padding-left: 5px;
+                                padding-right: 5px;
+                                font-size: 15px;
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                    >.order_list{
+                        width: 975px;
+                        min-height: 1000px;
+                        padding-bottom: 50px;
+                        overflow: hidden;
+                        >div{
+                            width: 300px;
+                            height: 368px;
+                            margin-top: 23px;
+                            float: left;
+                            margin-right: 24px;
+                            border-bottom: 1px solid #d6d6d6;
+                            >a{
+                                display: block;
+                                width: 300px;
+                                height: 270px;
+                                position: relative;
+                                >img{
+                                    width: 250px;
+                                    height: 250px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    @include zhong;
+                                    display: none;
+                                    &.ac{display: block;}
+                                }
+                            }
+                            >.page_bottom{
+                                height: 98px;
+                                width: 100%;
+                                border-bottom: 6px solid transparent;
+                                &.ac{
+                                    border-color: nth($bgcolor,2);
+                                }
+                                >a{
+                                    display: block;
+                                    width: 100%;
+                                    height: 22px;
+                                    text-align: center;
+                                    &:hover{
+                                        color: nth($bgcolor,4);
+                                    }
+                                }
+                                >.page_pri{
+                                    height: 18px;
+                                    text-align: center;
+                                    color: nth($bgcolor,4);
+                                    line-height: 18px;
+                                    font-size: 14px;
+                                    >span{
+                                        font-family: "微软雅黑";
+                                    }
+                                    >i{
+                                        font-weight: bolder;
+                                    }
+                                }
+                                >.page_xiaoshou{
+                                    text-align: center;
+                                    color: #999;
+                                    line-height: 36px;
+                                    >i{
+                                        color: black;
+                                        padding-right: 8px;
+                                        padding-left: 4px;
+                                    }
+                                    >em{
+                                        color: black;
+                                        padding-left: 4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // >.order_fenye{
+                    //     height: 105px;
+                    //     width: 100%;
+                    //     padding-top: 28px;
+                    //     padding-right: 20px;
+                    //     >div{
+                    //         width: auto;
+                    //         height: 100%;
+                    //         float: right;
+                    //         a{
+                    //             float: left;
+                    //             height: 33px;
+                    //             width: 33px;
+                    //             border: 1px solid #cccccc;
+                    //             text-align: center;
+                    //             line-height: 33px;
+                    //             margin-right: 10px;
+                    //             &:hover{
+                    //                 color: nth($bgcolor,4);
+                    //             }
+                    //             &.ac{
+                    //                 color: nth($bgcolor,4);
+                    //                 font-weight: bolder;
+                    //             }
+                    //         }
+                    //         >a:first-child{
+                    //             background: url(/images/list/page_boder_a_left.jpg) no-repeat;
+                    //             border: 0;
+                    //             &:hover{
+                    //                 background-position-x: -33px;
+                    //             }
+                    //         }
+                    //         >a:last-child{
+                    //             border: none;
+                    //             background: url(/images/list/page_boder_a_right.jpg) no-repeat;
+                    //             &:hover{
+                    //                 background-position-x: -33px;
+                    //             }
+                    //         }
+                    //     } 
+                    // }
+                }
+            }
+        }
+        
+        
+    }
+    
+}

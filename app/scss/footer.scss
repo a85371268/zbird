@@ -1,0 +1,125 @@
+//footer部分
+@import "variable";
+
+
+footer{
+    height: 551px;
+    background: nth($bgcolor,3);
+    font-size: $font-size;
+    .wrap{
+        width: $width;
+        height: 100%;
+        @include zhong;
+        //提供的服务部分
+        .serve{
+            width: 100%;
+            height:66px;
+            background: url(/images/footer_lnks.jpg) no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 150px;
+                height: 100%;
+                a{float: left;width: 100%;height: 100%;}
+            };
+        }
+        //中部的链接们和二维码
+        .links{
+            height: 181px;
+            width: 100%;
+            .s_logo{
+                float: left;
+                width: 85px;
+                height: 90px;
+                background: url(/images/logo85x90.jpg) no-repeat;
+                margin-left: 30px;
+                margin-top: 44px;
+            }
+            .links_center{
+                ul{
+                    width: 144px;
+                    padding-top: 38px;
+                    height: 100%;
+                    float: left;
+                    &:nth-child(1){margin-left: 80px;}
+                    >p{
+                        color: #666666;
+                        width: 110px;
+                        height: 22px;
+                    }
+                    >li{
+                        line-height: 20px;
+                        width: 110px;
+                        >a{
+                            display: block;
+                            width: 110px;
+                            color: #999999;
+                            &:hover{color: nth($bgcolor,4)};
+                        }
+                    }
+                }
+            }
+            .links_right{
+                width: 214px;
+                height: 120px;
+                background: url(/images/web_code.jpg) no-repeat;
+                float: right;
+                margin-top: 30px;
+            }
+        }
+        //footer的下半部分，其他部分
+        .other{
+            text-align: center;
+            color: #999999;
+            //联系我们
+            .callUs{
+                width: 100%;
+                height: 92px;
+                a{
+                    display: block;
+                    width: 488px;
+                    height: 60px;
+                    background: url(/images/fot_consult.jpg) no-repeat;
+                    margin-left: 369px;
+                    &:hover{background-position: -488px 0}
+                }
+            }
+            .map{
+                height: 26px;
+                a{
+                    color: #999999;
+                    &:hover{color: nth($bgcolor,4)}
+                }
+                span{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+            .company{height: 20px;}
+            .webs{
+                height: 37px;
+                a{
+                    color: #999999;
+                    &:hover{color: nth($bgcolor,4)}
+                }
+                span{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+            .imgs{
+                width: 580px;
+                @include zhong;
+                a{
+                    float: left;
+                    &:nth-last-child(1) img{
+                        width: 115px;
+                        height: 35px;
+                        margin-left: 6px;
+                    }
+                }
+            }
+        }
+    }
+}

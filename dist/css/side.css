@@ -1,0 +1,79 @@
+.services {
+  height: 339px;
+  width: 67px;
+  position: fixed;
+  z-index: 888;
+  right: 0;
+  top: 32%; }
+  .services > a {
+    display: block;
+    height: 67px;
+    width: 67px;
+    margin-bottom: 1px; }
+    .services > a:nth-child(1) {
+      background: url(/images/1.gif) no-repeat; }
+      .services > a:nth-child(1):hover {
+        background: url(/images/1_2.gif) no-repeat; }
+    .services > a:nth-child(2) {
+      background: url(/images/2.jpg) no-repeat;
+      text-align: center; }
+      .services > a:nth-child(2) > span {
+        display: inline-block;
+        color: white;
+        padding-top: 20px; }
+      .services > a:nth-child(2):hover {
+        background: url(/images/2_2.jpg) no-repeat; }
+    .services > a:nth-child(3) {
+      background: url(/images/3.jpg) no-repeat; }
+      .services > a:nth-child(3):hover {
+        background: url(/images/3_2.jpg) no-repeat; }
+    .services > a:nth-child(4) {
+      background: url(/images/4.jpg) no-repeat; }
+      .services > a:nth-child(4):hover {
+        background: url(/images/4_2.jpg) no-repeat; }
+  .services > p {
+    display: block;
+    height: 67px;
+    width: 67px;
+    margin-bottom: 1px;
+    background: url(/images/5.jpg) no-repeat;
+    position: relative; }
+    .services > p:hover > i {
+      display: block; }
+    .services > p > i {
+      position: absolute;
+      left: -207px;
+      bottom: 0;
+      width: 206px;
+      height: 135px;
+      background: url(/images/code.jpg) no-repeat;
+      display: none; }
+  .services > span {
+    position: absolute;
+    top: -94px;
+    left: -21px;
+    width: 88px;
+    height: 95px; }
+    .services > span > a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background: url(/images/img.png) no-repeat; }
+  .services > em {
+    position: absolute;
+    bottom: -47px;
+    left: 14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: none; }
+    .services > em.ac {
+      display: block; }
+    .services > em > a {
+      border-radius: 50%;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: url(/images/s_totop.jpg) no-repeat; }
+      .services > em > a:hover {
+        background-position-x: -40px; }

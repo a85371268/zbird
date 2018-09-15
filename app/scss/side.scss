@@ -1,0 +1,94 @@
+@import "variable";
+.services{
+    height: 339px;
+    width: 67px;
+    position: fixed;
+    z-index: 888;
+    right: 0;
+    top:32%;
+    //侧边栏的四个点击框
+    >a{
+        display: block;
+        height: 67px;
+        width: 67px;
+        margin-bottom: 1px;
+        &:nth-child(1){
+            background: url(/images/1.gif) no-repeat;
+            &:hover{background: url(/images/1_2.gif) no-repeat;}
+        }
+        &:nth-child(2){
+            background: url(/images/2.jpg) no-repeat;
+            text-align: center;
+            >span{
+                display: inline-block;
+                color: white;
+                padding-top: 20px;
+            }
+            &:hover{background: url(/images/2_2.jpg) no-repeat;}
+        }
+        &:nth-child(3){
+            background: url(/images/3.jpg) no-repeat;
+            &:hover{background: url(/images/3_2.jpg) no-repeat;}
+        }
+        &:nth-child(4){
+            background: url(/images/4.jpg) no-repeat;
+            &:hover{background: url(/images/4_2.jpg) no-repeat;}
+        }
+    }
+    >p{
+        display: block;
+        height: 67px;
+        width: 67px;
+        margin-bottom: 1px;
+        background: url(/images/5.jpg) no-repeat;
+        position: relative;
+        &:hover>i{
+            display: block;
+        }
+        >i{
+            position: absolute;
+            left: -207px;
+            bottom:0;
+            width: 206px;
+            height: 135px;
+            background: url(/images/code.jpg) no-repeat;
+            display: none;
+        }
+    }
+    >span{
+        position: absolute;
+        top:-94px;
+        left: -21px;
+        width: 88px;
+        height: 95px;
+        >a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: url(/images/img.png) no-repeat;
+        }
+    }
+    >em{
+        position: absolute;
+        bottom: -47px;
+        left: 14px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: none;
+        &.ac{
+            display: block;
+        }
+        >a{
+            border-radius: 50%;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: url(/images/s_totop.jpg) no-repeat;
+            &:hover{
+                background-position-x: -40px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,181 @@
+@import "variable";
+@import "side";
+@import "reset";
+@import "header";
+@import "footer";
+
+main{
+    .car_wrap{
+        width: $width;
+        @include zhong;
+        padding: 60px 0;
+        .car_pic{
+            display: none;
+            width: 100%;
+            height: 431px;
+            background: url(/images/list/shopcarbgpic.jpg) no-repeat;
+            &.ac{display: block;}
+            >.show_btn{
+                width: 320px;
+                height: 111px;
+                float: right;
+                margin-right: 148px;
+                margin-top: 171px;
+                text-align: center;
+                >div{
+                    height: 100%;
+                    width: 100%;
+                    display: none;
+                    &.ac{display: block;}
+                    >p{
+                        height: 50px;
+                    }
+                    >a{
+                        display: inline-block;
+                        width: 126px;
+                        height: 34px;
+                        background: nth($bgcolor,4);
+                        text-align: center;
+                        line-height: 34px;
+                        @include border;
+                        color: white;
+                    }
+                    &:nth-child(2){
+                        >a:nth-child(2){
+                            margin-right: 30px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        #car_user{
+            display: none;
+            &.ac{display: block;}
+            .show_usercar{
+                width: 100%;
+                overflow: hidden;
+                .title{
+                    height: 34px;
+                    border-bottom: 1px solid;
+                    >span{
+                        height: 100%;
+                        display: inline-block;
+                        text-align: center;
+                        width: 200px;
+                        &:nth-child(1){
+                            width: 335px;
+                            text-align: left;
+                            padding-left: 80px;
+                        }
+                    }
+                }
+                .shangpin{
+                    width: 100%;
+                    height: 98px;
+                    border-bottom: 1px solid #eeeeee;
+                    >div{
+                        width: 204px;
+                        float: left;
+                        height: 100%;
+                        text-align: center;
+                        line-height: 98px;
+                    }
+                    .shangpin1{
+                        width: 335px;
+                        text-align: left;
+                        >a{
+                            img{
+                                width: 60px;
+                                height: 60px;
+                                vertical-align: middle;
+                            }
+                            >span{
+                                line-height: 98px;
+                                padding-left: 10px;
+                                &:hover{color: nth($bgcolor,4)}
+                            }
+                        }
+                    }
+                    .num{
+                        >input{
+                            text-align: center;
+                            width: 43px;
+                            height: 25px;
+                        }
+                        >button{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            border: 0;
+                            color: white;
+                        }
+                    }
+                    .do_it{
+                        >a{
+                            padding: 15px;
+                            color: red;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .jiesuan{
+            height: 128px;
+            width: 100%;
+            padding-top: 46px;
+            position: relative;
+            .jiesuan_left{
+                width: 148px;
+                height: 100%;
+                float: left;
+                a{
+                    &:hover{
+                        color: nth($bgcolor,4)
+                    }
+                    color: #666666;
+                }
+                >a:nth-child(1){
+                    float: left;
+                }
+                >a:nth-child(2){
+                    float: right;
+                }
+            }
+            .jiesuan_right{
+                width: 166px;
+                height: 100%;
+                float: right;
+                color: #666666;
+                >i{
+                    font-family: "微软雅黑";
+                    color: nth($bgcolor,4);
+                }
+                >span{
+                    font-family: Arial;
+                    font-size: 15px;
+                    font-weight: bolder;
+                    color: nth($bgcolor,4);
+                }
+            }
+            >a{
+                position: absolute;
+                right: 45px;
+                bottom: 0;
+                width: 130px;
+                height: 32px;
+                background: nth($bgcolor,4);
+                text-align: center;
+                line-height: 32px;
+                color: white;
+                &:hover{
+                    opacity: 0.85;
+                }
+            }
+        }
+    }
+}
+

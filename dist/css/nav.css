@@ -1,0 +1,80 @@
+.nav .bNav {
+  background: #909090;
+  position: relative; }
+  .nav .bNav > .wrap {
+    width: 1180px;
+    height: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 2px; }
+    .nav .bNav > .wrap ul > li {
+      float: left; }
+      .nav .bNav > .wrap ul > li > a {
+        float: left;
+        color: white;
+        width: 97px; }
+        .nav .bNav > .wrap ul > li > a.ac {
+          background: #fdb2a4; }
+        .nav .bNav > .wrap ul > li > a.bc {
+          background: #fdb2a4; }
+    .nav .bNav > .wrap #s_nav {
+      float: left; }
+    .nav .bNav > .wrap .right {
+      float: right; }
+  .nav .bNav .tanchu {
+    display: none;
+    height: 325px;
+    width: 100%;
+    background: white;
+    z-index: 80;
+    position: absolute;
+    box-shadow: -22px 18px 65px -39px; }
+    .nav .bNav .tanchu.ac {
+      display: block; }
+    .nav .bNav .tanchu > .wrap {
+      width: 1180px;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 31px;
+      padding-left: 30px;
+      letter-spacing: 1px; }
+      .nav .bNav .tanchu > .wrap a {
+        color: #666666; }
+        .nav .bNav .tanchu > .wrap a:hover {
+          color: #ff8a81; }
+      .nav .bNav .tanchu > .wrap .tan_left {
+        width: 304px;
+        height: 265px;
+        float: left;
+        border-right: 1px solid #e5e5e5; }
+        .nav .bNav .tanchu > .wrap .tan_left h2 {
+          height: 33px;
+          float: left;
+          width: 100%;
+          font-size: 24px; }
+        .nav .bNav .tanchu > .wrap .tan_left p {
+          width: 100%;
+          height: 35px;
+          float: left; }
+        .nav .bNav .tanchu > .wrap .tan_left div {
+          float: left; }
+          .nav .bNav .tanchu > .wrap .tan_left div ul {
+            float: left; }
+            .nav .bNav .tanchu > .wrap .tan_left div ul li {
+              padding-bottom: 14px; }
+          .nav .bNav .tanchu > .wrap .tan_left div ul:nth-child(1) {
+            width: 153px; }
+      .nav .bNav .tanchu > .wrap .tan_center {
+        width: 220px;
+        height: 265px;
+        float: left;
+        padding-top: 65px;
+        padding-left: 46px; }
+        .nav .bNav .tanchu > .wrap .tan_center ul li {
+          padding-bottom: 14px; }
+      .nav .bNav .tanchu > .wrap .tan_right {
+        float: right; }

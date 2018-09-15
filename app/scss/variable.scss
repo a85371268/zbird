@@ -1,0 +1,19 @@
+
+//设置scss的通用变量
+$font-size:12px;
+$bgcolor:#fbf2f1,#fdb2a4,#fdf2ec,#ff8a81;
+$width: 1180px;
+@mixin zhong{margin-left: auto;margin-right: auto;}
+@mixin border{
+    border-top-left-radius: 8px;    
+    border-top-right-radius: 8px;    
+    border-bottom-left-radius: 8px;    
+    border-bottom-right-radius: 8px;    
+}
+@mixin flash{
+    @keyframes flash{
+        0%{opacity: 1;}
+        50%{opacity: 0.7;}
+        100%{opacity: 1;}
+    }
+}

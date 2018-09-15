@@ -1,0 +1,96 @@
+@import "variable";
+
+.nav .bNav{
+    background: #909090;
+    position: relative;
+    >.wrap{
+        width: $width;
+        height: 33px;
+        @include zhong;
+        font-size: $font-size;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 2px;
+        ul>li{
+            float: left;
+            >a{
+                float: left;
+                color: white;
+                width: 97px;
+                &.ac{background: nth($bgcolor,2)}
+                &.bc{background: nth($bgcolor,2)}
+            }
+        }
+        #s_nav{
+            float: left;   
+        }
+        .right{
+            float: right;
+        }
+    }
+    //出发nav的弹出框
+    .tanchu{
+        display: none;
+        height: 325px;
+        width: 100%;
+        background: white;
+        z-index: 80;
+        position: absolute;
+        box-shadow: -22px 18px 65px -39px;
+        &.ac{display: block;}
+        >.wrap{
+            width: $width;
+            height: 100%;
+            @include zhong;
+            padding-top: 31px;
+            padding-left: 30px;
+            letter-spacing: 1px;
+            a{
+                color: #666666;
+                &:hover{color: nth($bgcolor,4)}
+            }
+            .tan_left{
+                width: 304px;
+                height: 265px;
+                float: left;
+                border-right:1px solid #e5e5e5;
+                h2{
+                    height: 33px;
+                    float: left;
+                    width: 100%;
+                    font-size: 24px;
+                }
+                p{
+                    width: 100%;
+                    height: 35px;
+                    float: left;
+                }
+                div{
+                    float: left;
+                    ul{
+                        float: left;
+                        li{
+                            padding-bottom: 14px;
+                        }
+                    }
+                    ul:nth-child(1){
+                        width: 153px;
+                    }
+                }
+            }
+            .tan_center{
+                width: 220px;
+                height: 265px;
+                float: left;
+                padding-top: 65px;
+                padding-left: 46px;
+                ul{
+                    li{padding-bottom: 14px;}
+                }
+            }
+            .tan_right{
+                float: right;
+            }
+        }
+    }
+}
